@@ -4,6 +4,7 @@ import ImageAccordion from '@/components/accordions/ImageAccordion';
 import SimpleKPIBento from '@/components/bento/SimpleKPIBento';
 import StandardTextbox from '@/components/textbox/StandardTextbox';
 import HorizontalTextbox from '@/components/textbox/HorizontalTextbox';
+import StaggerButton from '@/components/buttons/staggerButton/StaggerButton';
 
 export default function Home() {
   return (
@@ -53,11 +54,12 @@ export default function Home() {
           title={<h3 className="text-2xl">Join Us Today!</h3>}
           description={<p className="text-lg">Sign up for our newsletter and stay updated with the latest trends.</p>}
           className="text-white"
-          children={<div className="flex items-center gap-3 sm:gap-4">
+        >
+          <div className="flex items-center gap-3 sm:gap-4">
             <StaggerButton text="Start Now" className="px-4 sm:px-6" />
             <StaggerButton text="Explore" className="px-4 sm:px-6 text-white" bgClassName="!bg-black" />
-          </div>}
-        />
+          </div>
+        </ContentTextbox>
       </section>
 
       {/* Contact Section */}
