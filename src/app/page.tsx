@@ -4,7 +4,6 @@ import ImageAccordion from '@/components/accordions/ImageAccordion';
 import SimpleKPIBento from '@/components/bento/SimpleKPIBento';
 import StandardTextbox from '@/components/textbox/StandardTextbox';
 import HorizontalTextbox from '@/components/textbox/HorizontalTextbox';
-import { LucideIcon } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -23,7 +22,7 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="bg-[#0b1020] py-24">
         <SimpleKPIBento
-          items={[{ value: "95%", description: "Customer Satisfaction", icon: <LucideIcon name='star' /> }, { value: "50%", description: "Increase in Sales", icon: <LucideIcon name='dollar-sign' /> }]} 
+          items={[{ value: "95%", description: "Customer Satisfaction" }, { value: "50%", description: "Increase in Sales" }]}
           className="grid grid-cols-1 lg:grid-cols-2 gap-10"
         />
       </section>
